@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🏥 Rural Health Care Admin Dashboard</h1>
+
+    <button onclick="logout()">Logout</button>
+
+</header>
+
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Total Patients</h3>
+        <h1 id="totalPatients">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Male</h3>
+        <h1 id="maleCount">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Female</h3>
+        <h1 id="femaleCount">0</h1>
+    </div>
+
+    <div class="card">
+        <h3>Others</h3>
+        <h1 id="otherCount">0</h1>
+    </div>
+
+</div>
+
+
+<div class="dashboard">
+
+    <div class="card">
+
+        <h3>Appointments</h3>
+
+        <h2>Coming Soon</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Doctors</h3>
+
+        <h2>Coming Soon</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Medicine</h3>
+
+        <h2>Coming Soon</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Emergency SOS</h3>
+
+        <h2>Coming Soon</h2>
+
+    </div>
+
+</div>
+
+
+
+<h2 class="title">Patient Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Age</th>
+
+<th>Gender</th>
+
+<th>Mobile</th>
+
+<th>Village</th>
+
+<th>Blood Group</th>
+
+</tr>
+
+</thead>
+
+<tbody id="patientTable">
+
+</tbody>
+
+</table>
+
+
+<script src="adminScript.js"></script>
+
+</body>
+
+</html>

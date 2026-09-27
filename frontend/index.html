@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Health Care - Patient Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>Health Care Patient Management</h1>
+
+
+
+
+<!-- Dashboard -->
+
+<div class="container">
+
+    <h2>Total Patients</h2>
+
+    <h1 id="count">0</h1>
+
+
+    <h3>Male Patients : <span id="maleCount">0</span></h3>
+
+    <h3>Female Patients : <span id="femaleCount">0</span></h3>
+
+    <h3>Others : <span id="othersCount">0</span></h3>
+
+
+</div>
+
+
+
+
+
+
+<!-- Add / Update Patient -->
+
+
+<div class="container">
+
+
+<h2>Patient Details</h2>
+
+
+
+<input type="text" id="name" placeholder="Enter Name">
+
+
+
+<input type="number" id="age" placeholder="Enter Age">
+
+
+
+
+
+<!-- Gender Selection -->
+
+<select id="gender">
+
+<option value="">Select Gender</option>
+
+<option value="Male">Male</option>
+
+<option value="Female">Female</option>
+
+<option value="Others">Others</option>
+
+</select>
+
+
+
+
+
+<!-- Country Code + Mobile -->
+
+
+<div style="display:flex; gap:5px;">
+
+
+<select id="countryCode">
+
+<option value="+91">+91 India</option>
+
+<option value="+1">+1 USA</option>
+
+<option value="+44">+44 UK</option>
+
+<option value="+65">+65 Singapore</option>
+
+</select>
+
+
+
+<input type="number" id="mobile" placeholder="10 digit mobile number">
+
+
+</div>
+
+
+
+
+
+
+<input type="text" id="village" placeholder="Enter Village">
+
+
+
+
+
+
+<!-- Blood Group -->
+
+<select id="bloodGroup">
+
+
+<option value="">Select Blood Group</option>
+
+<option value="A+">A+</option>
+
+<option value="A-">A-</option>
+
+<option value="B+">B+</option>
+
+<option value="B-">B-</option>
+
+<option value="AB+">AB+</option>
+
+<option value="AB-">AB-</option>
+
+<option value="O+">O+</option>
+
+<option value="O-">O-</option>
+
+
+</select>
+
+
+
+
+
+
+<button id="saveBtn" onclick="savePatient()">
+
+Save Patient
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Search Patient -->
+
+
+<div class="container">
+
+
+<h2>Search Patient</h2>
+
+
+<input type="text" id="searchInput" placeholder="Search by name or mobile">
+
+
+
+<button onclick="searchPatient()">
+
+Search
+
+</button>
+
+
+
+<button onclick="loadPatients()">
+
+Show All
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<h2>Patient List</h2>
+
+
+
+
+
+<table border="1">
+
+
+<thead>
+
+
+<tr>
+
+<th>Name</th>
+
+<th>Age</th>
+
+<th>Gender</th>
+
+<th>Mobile</th>
+
+<th>Village</th>
+
+<th>Blood Group</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody id="patientTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>

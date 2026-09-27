@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment Management</title>
+
+    <link rel="stylesheet" href="appointment.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📅 Appointment Management</h1>
+
+
+    <button onclick="window.location.href='admin.html'">
+
+        ← Back to Dashboard
+
+    </button>
+
+
+</header>
+
+
+
+<!-- Dashboard -->
+
+<div class="dashboard">
+
+
+    <div class="card">
+
+        <h3>Total Appointments</h3>
+
+        <h1 id="count">0</h1>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- Appointment Form -->
+
+<div class="container">
+
+
+    <h2>Book Appointment</h2>
+
+
+
+    <input 
+        type="text"
+        id="patientName"
+        placeholder="Patient Name"
+        required>
+
+
+
+
+    <!-- Dynamic Doctor Dropdown -->
+
+    <select id="doctorName" required>
+
+
+        <option value="">
+            Select Doctor
+        </option>
+
+
+    </select>
+
+
+
+
+
+    <input 
+        type="date"
+        id="appointmentDate"
+        required>
+
+
+
+
+
+    <select id="appointmentTime" required>
+
+
+        <option value="">
+            Select Time
+        </option>
+
+
+        <option>
+            09:00 AM
+        </option>
+
+
+        <option>
+            09:30 AM
+        </option>
+
+
+        <option>
+            10:00 AM
+        </option>
+
+
+        <option>
+            10:30 AM
+        </option>
+
+
+        <option>
+            11:00 AM
+        </option>
+
+
+        <option>
+            11:30 AM
+        </option>
+
+
+        <option>
+            02:00 PM
+        </option>
+
+
+        <option>
+            02:30 PM
+        </option>
+
+
+        <option>
+            03:00 PM
+        </option>
+
+
+        <option>
+            03:30 PM
+        </option>
+
+
+    </select>
+
+
+
+
+
+
+    <textarea
+
+        id="reason"
+
+        placeholder="Reason for Visit"
+
+        rows="4"
+
+    ></textarea>
+
+
+
+
+
+
+    <select id="status">
+
+
+        <option value="Booked">
+            Booked
+        </option>
+
+
+        <option value="Completed">
+            Completed
+        </option>
+
+
+        <option value="Cancelled">
+            Cancelled
+        </option>
+
+
+    </select>
+
+
+
+
+
+
+    <button 
+
+        id="saveBtn"
+
+        onclick="saveAppointment()">
+
+
+        Book Appointment
+
+
+    </button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Search Section -->
+
+
+<div class="container">
+
+
+    <h2>
+        Search Appointment
+    </h2>
+
+
+
+    <input
+
+        type="text"
+
+        id="searchInput"
+
+        placeholder="Search by Patient Name or Doctor Name"
+
+    >
+
+
+
+
+    <button onclick="searchAppointment()">
+
+        🔍 Search
+
+    </button>
+
+
+
+
+
+    <button onclick="loadAppointments()">
+
+        📋 Show All
+
+    </button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2 class="title">
+
+    Appointment List
+
+</h2>
+
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+    Patient
+</th>
+
+
+<th>
+    Doctor
+</th>
+
+
+<th>
+    Date
+</th>
+
+
+<th>
+    Time
+</th>
+
+
+<th>
+    Reason
+</th>
+
+
+<th>
+    Status
+</th>
+
+
+<th>
+    Action
+</th>
+
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody id="appointmentTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+<script src="appointmentScript.js"></script>
+
+
+</body>
+
+
+</html>

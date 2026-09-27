@@ -1,0 +1,293 @@
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #eaf6f8;
+
+    padding: 20px;
+
+    color: #334155;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    color: #0f766e;
+
+    font-size: 36px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+h2 {
+
+    text-align: center;
+
+    color: #155e75;
+
+}
+
+
+
+
+
+.container {
+
+    background: white;
+
+    width: 420px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+#count {
+
+    text-align: center;
+
+    color: #0d9488;
+
+    font-size: 45px;
+
+}
+
+
+
+
+
+#maleCount {
+
+    color: #2563eb;
+
+}
+
+
+#femaleCount {
+
+    color: #db2777;
+
+}
+
+
+#othersCount {
+
+    color: #7c3aed;
+
+}
+
+
+
+
+input, select {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+}
+
+
+
+input:focus, select:focus {
+
+
+    outline: none;
+
+    border-color: #14b8a6;
+
+    box-shadow: 0 0 6px #99f6e4;
+
+}
+
+
+
+
+
+button {
+
+
+    padding: 12px 18px;
+
+    background: #0d9488;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    margin: 4px;
+
+    font-size: 15px;
+
+}
+
+
+
+button:hover {
+
+
+    background: #0f766e;
+
+}
+
+
+
+
+
+table {
+
+
+    width: 95%;
+
+    margin: 30px auto;
+
+    background: white;
+
+    border-collapse: collapse;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+th {
+
+
+    background: #0d9488;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+
+
+
+td {
+
+
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+
+
+
+
+tr:hover {
+
+
+    background: #f0fdfa;
+
+}
+
+
+
+
+
+/* Edit button */
+
+table button:first-child {
+
+
+    background: #2563eb;
+
+}
+
+
+
+table button:first-child:hover {
+
+
+    background: #1d4ed8;
+
+}
+
+
+
+
+
+/* Delete button */
+
+table button:last-child {
+
+
+    background: #ef4444;
+
+}
+
+
+
+table button:last-child:hover {
+
+
+    background: #dc2626;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+    .container{
+
+        width:90%;
+
+    }
+
+
+    table{
+
+        font-size:12px;
+
+    }
+
+
+}
